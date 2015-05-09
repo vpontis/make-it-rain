@@ -62,6 +62,7 @@ def produce_solution(args):
         #
         # Similarly, in this next line, we find the rainfall rate field ('RR1')
         # and then convert it from a space delimited string to a float array.
+        print row[rr1_ind]
         rr1 = np.array(row[rr1_ind].split(' '), dtype='float')
         # compute the mean of the sample (units at this point are mm/hr)
         avg_rr1 = np.mean(rr1)
